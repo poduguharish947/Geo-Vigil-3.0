@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geovigil - Excellence in Education</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="landing-page">
+  
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-shield">🎓</span>
+        <div class="logo-text">
+          <span class="logo-name">Geovigil</span>
+          <span class="logo-tagline">Est. 2015</span>
+        </div>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#academics" class="nav-link">Academics</a></li>
+        <li><a href="#news" class="nav-link">News</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#" onclick="showLoginModal(); return false;" class="nav-link-btn">Portal Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Shape Your Future at Geovigil</h1>
+      <p class="hero-subtitle">Empowering students with world-class education, innovation, and leadership since 2015</p>
+      <div class="hero-buttons">
+        <button onclick="showLoginModal()" class="btn-hero-primary">Access Portal</button>
+        <button onclick="scrollToSection('about')" class="btn-hero-secondary">Discover More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Stats -->
+  <section class="stats-section">
+    <div class="container-wide">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">10,000+</div>
+          <div class="stat-label">Students Enrolled</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Expert Faculty</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100+</div>
+          <div class="stat-label">Degree Programs</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">95%</div>
+          <div class="stat-label">Placement Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container-wide">
+      <div class="section-header">
+        <h2 class="section-title">About Geovigil</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="about-intro">Geovigil is a premier institution of higher learning, dedicated to excellence in education, research, and innovation. Founded with a vision to transform lives through quality education, Geovigil has emerged as one of India's leading universities.</p>
+          <p>Located in the heart of academic excellence, Geovigil offers state-of-the-art infrastructure, experienced faculty, and a vibrant campus life. Our commitment to holistic education prepares students to excel in their chosen fields and become global citizens.</p>
+          <div class="about-features">
+            <div class="feature-item">
+              <span class="feature-icon">🏆</span>
+              <span class="feature-text">Top-ranked programs</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">🌍</span>
+              <span class="feature-text">Global partnerships</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">💡</span>
+              <span class="feature-text">Innovation-driven</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="image-placeholder">
+            <span class="placeholder-icon">🏛️</span>
+            <span class="placeholder-text">Historic Campus</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academic Programs -->
+  <section class="academics-section" id="academics">
+    <div class="container-wide">
+      <div class="section-header">
+        <h2 class="section-title">Academic Excellence</h2>
+        <div class="section-divider"></div>
+        <p class="section-description">World-class programs designed to prepare you for tomorrow's challenges</p>
+      </div>
+      <div class="programs-grid">
+        <div class="program-card">
+          <div class="program-icon">💻</div>
+          <h3 class="program-title">Engineering & Technology</h3>
+          <p class="program-desc">Computer Science, Electrical, Mechanical, and more cutting-edge programs</p>
+          <ul class="program-list">
+            <li>Computer Science Engineering</li>
+            <li>Electronics & Communication</li>
+            <li>Mechanical Engineering</li>
+          </ul>
+        </div>
+        <div class="program-card">
+          <div class="program-icon">🔬</div>
+          <h3 class="program-title">Sciences & Research</h3>
+          <p class="program-desc">Biotechnology, Chemistry, Physics, and advanced research facilities</p>
+          <ul class="program-list">
+            <li>Biotechnology</li>
+            <li>Applied Sciences</li>
+            <li>Research Labs</li>
+          </ul>
+        </div>
+        <div class="program-card">
+          <div class="program-icon">📊</div>
+          <h3 class="program-title">Business & Management</h3>
+          <p class="program-desc">MBA, Finance, Marketing, and entrepreneurship programs</p>
+          <ul class="program-list">
+            <li>Business Administration</li>
+            <li>Finance & Accounting</li>
+            <li>Entrepreneurship</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News & Blogs Section -->
+  <section class="news-section" id="news">
+    <div class="container-wide">
+      <div class="section-header">
+        <h2 class="section-title">Geovigil News & Campus Blog</h2>
+        <div class="section-divider"></div>
+        <p class="section-description">Stay updated with the latest happenings, achievements, and stories from Geovigil</p>
+      </div>
+      <div class="news-grid">
+        <article class="news-card featured">
+          <div class="news-image">
+            <div class="image-placeholder news-placeholder">
+              <span class="placeholder-icon">🎓</span>
+            </div>
+            <span class="news-badge">Featured</span>
+          </div>
+          <div class="news-content">
+            <div class="news-meta">
+              <span class="news-date">December 18, 2024</span>
+              <span class="news-category">Achievement</span>
+            </div>
+            <h3 class="news-title">Geovigil Students Excel in National Engineering Competition</h3>
+            <p class="news-excerpt">A team of engineering students from Geovigil secured the top position at the National Innovation Challenge 2024, presenting their groundbreaking project on sustainable urban development. The team's innovative solution impressed judges with its practical application and environmental impact.</p>
+            <a href="#" class="news-link">Read Full Story →</a>
+          </div>
+        </article>
+        <article class="news-card">
+          <div class="news-image">
+            <div class="image-placeholder news-placeholder">
+              <span class="placeholder-icon">🏆</span>
+            </div>
+          </div>
+          <div class="news-content">
+            <div class="news-meta">
+              <span class="news-date">December 12, 2024</span>
+              <span class="news-category">Campus Life</span>
+            </div>
+            <h3 class="news-title">Annual Tech Fest 'Innovate 2024' Concludes Successfully</h3>
+            <p class="news-excerpt">Geovigil's flagship tech festival witnessed participation from over 5,000 students across India, featuring hackathons, robotics competitions, and guest lectures from industry leaders.</p>
+            <a href="#" class="news-link">Read More →</a>
+          </div>
+        </article>
+        <article class="news-card">
+          <div class="news-image">
+            <div class="image-placeholder news-placeholder">
+              <span class="placeholder-icon">🔬</span>
+            </div>
+          </div>
+          <div class="news-content">
+            <div class="news-meta">
+              <span class="news-date">December 8, 2024</span>
+              <span class="news-category">Research</span>
+            </div>
+            <h3 class="news-title">Geovigil Launches Advanced Research Lab for AI and Robotics</h3>
+            <p class="news-excerpt">The university inaugurated a cutting-edge research facility equipped with the latest technology for artificial intelligence, machine learning, and robotics research, enabling students to work on industry-relevant projects.</p>
+            <a href="#" class="news-link">Read More →</a>
+          </div>
+        </article>
+        <article class="news-card">
+          <div class="news-image">
+            <div class="image-placeholder news-placeholder">
+              <span class="placeholder-icon">🌍</span>
+            </div>
+          </div>
+          <div class="news-content">
+            <div class="news-meta">
+              <span class="news-date">December 1, 2024</span>
+              <span class="news-category">Placements</span>
+            </div>
+            <h3 class="news-title">Record-Breaking Placement Season: 95% Students Placed</h3>
+            <p class="news-excerpt">Geovigil achieves its highest-ever placement rate with leading companies like TCS, Infosys, Amazon, and Microsoft recruiting our talented graduates. Average package increased by 25% from last year.</p>
+            <a href="#" class="news-link">Read More →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Campus Blog Section -->
+  <section class="blog-section" id="blog">
+    <div class="container-wide">
+      <div class="section-header">
+        <h2 class="section-title">Campus Life Blog</h2>
+        <div class="section-divider"></div>
+        <p class="section-description">Stories, experiences, and insights from our vibrant campus community</p>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card">
+          <div class="blog-header">
+            <span class="blog-category">Student Life</span>
+            <span class="blog-date">Dec 16, 2024</span>
+          </div>
+          <h3 class="blog-title">A Day in the Life of a Geovigil Engineering Student</h3>
+          <div class="blog-author">
+            <span class="author-icon">👤</span>
+            <span class="author-name">By Priya Sharma, CSE 3rd Year</span>
+          </div>
+          <p class="blog-excerpt">From early morning coding sessions to late-night project discussions in the library, life at Geovigil is an exciting journey of learning, friendship, and growth. Let me take you through a typical day on our beautiful campus...</p>
+          <div class="blog-tags">
+            <span class="blog-tag">#CampusLife</span>
+            <span class="blog-tag">#Engineering</span>
+            <span class="blog-tag">#StudentStory</span>
+          </div>
+          <a href="#" class="blog-read-more">Continue Reading →</a>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-header">
+            <span class="blog-category">Events</span>
+            <span class="blog-date">Dec 14, 2024</span>
+          </div>
+          <h3 class="blog-title">Cultural Festival 'Samskruthi 2024' - A Celebration of Diversity</h3>
+          <div class="blog-author">
+            <span class="author-icon">👤</span>
+            <span class="author-name">By Events Team</span>
+          </div>
+          <p class="blog-excerpt">Our annual cultural festival brought together students from all branches to celebrate India's rich cultural heritage. With over 2,000 participants, the three-day extravaganza featured dance, music, drama, fashion shows, and traditional art exhibitions. The event showcased the incredible talent and unity of our diverse student community...</p>
+          <div class="blog-tags">
+            <span class="blog-tag">#CulturalFest</span>
+            <span class="blog-tag">#Diversity</span>
+            <span class="blog-tag">#Celebration</span>
+          </div>
+          <a href="#" class="blog-read-more">Continue Reading →</a>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-header">
+            <span class="blog-category">Technology</span>
+            <span class="blog-date">Dec 10, 2024</span>
+          </div>
+          <h3 class="blog-title">How Geovigil's Innovation Lab is Shaping Future Entrepreneurs</h3>
+          <div class="blog-author">
+            <span class="author-icon">👤</span>
+            <span class="author-name">By Dr. Rajesh Kumar, Faculty Coordinator</span>
+          </div>
+          <p class="blog-excerpt">The Geovigil Innovation Lab has become a breeding ground for startups and innovative ideas. With state-of-the-art equipment, mentorship from industry experts, and seed funding opportunities, students are transforming their ideas into reality. This year alone, 15 student startups have been incubated...</p>
+          <div class="blog-tags">
+            <span class="blog-tag">#Innovation</span>
+            <span class="blog-tag">#Startups</span>
+            <span class="blog-tag">#Entrepreneurship</span>
+          </div>
+          <a href="#" class="blog-read-more">Continue Reading →</a>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-header">
+            <span class="blog-category">Placements</span>
+            <span class="blog-date">Dec 6, 2024</span>
+          </div>
+          <h3 class="blog-title">From Classroom to Corporate: Success Stories of Geovigil Alumni</h3>
+          <div class="blog-author">
+            <span class="author-icon">👤</span>
+            <span class="author-name">By Placement Cell</span>
+          </div>
+          <p class="blog-excerpt">Meet Arjun Reddy (Batch 2023), now a Software Engineer at Google, and Sneha Patel, working as a Data Scientist at Microsoft. They share their journey from being Geovigil students to landing dream jobs at top tech companies. Their stories inspire current students and highlight the quality of education and training at Geovigil...</p>
+          <div class="blog-tags">
+            <span class="blog-tag">#Alumni</span>
+            <span class="blog-tag">#Success</span>
+            <span class="blog-tag">#Placements</span>
+          </div>
+          <a href="#" class="blog-read-more">Continue Reading →</a>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-header">
+            <span class="blog-category">Sports</span>
+            <span class="blog-date">Dec 3, 2024</span>
+          </div>
+          <h3 class="blog-title">Geovigil's Athletic Achievements: Breaking Records on the Field</h3>
+          <div class="blog-author">
+            <span class="author-icon">👤</span>
+            <span class="author-name">By Sports Department</span>
+          </div>
+          <p class="blog-excerpt">Our athletes brought glory to Geovigil by winning 12 gold medals at the Inter-University Sports Championship. From cricket to athletics, basketball to badminton, our students demonstrated exceptional sportsmanship and skill. The university's focus on holistic development ensures students excel both academically and in sports...</p>
+          <div class="blog-tags">
+            <span class="blog-tag">#Sports</span>
+            <span class="blog-tag">#Athletics</span>
+            <span class="blog-tag">#Champions</span>
+          </div>
+          <a href="#" class="blog-read-more">Continue Reading →</a>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-header">
+            <span class="blog-category">Community</span>
+            <span class="blog-date">Nov 28, 2024</span>
+          </div>
+          <h3 class="blog-title">Social Outreach: Geovigil Students Making a Difference</h3>
+          <div class="blog-author">
+            <span class="author-icon">👤</span>
+            <span class="author-name">By NSS Unit</span>
+          </div>
+          <p class="blog-excerpt">The National Service Scheme (NSS) unit at Geovigil organized a week-long community service program benefiting over 500 underprivileged children. From teaching basic computer skills to organizing health camps and environmental awareness drives, our students are committed to giving back to society...</p>
+          <div class="blog-tags">
+            <span class="blog-tag">#Community</span>
+            <span class="blog-tag">#SocialService</span>
+            <span class="blog-tag">#NSS</span>
+          </div>
+          <a href="#" class="blog-read-more">Continue Reading →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Section -->
+  <section class="research-section" id="research">
+    <div class="container-wide">
+      <div class="section-header">
+        <h2 class="section-title">Pioneering Research</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="research-grid">
+        <div class="research-card">
+          <h4>🤖 Artificial Intelligence</h4>
+          <p>Advancing machine learning algorithms and neural network architectures</p>
+        </div>
+        <div class="research-card">
+          <h4>♻️ Sustainable Energy</h4>
+          <p>Developing renewable energy solutions for a greener future</p>
+        </div>
+        <div class="research-card">
+          <h4>🧬 Biotechnology</h4>
+          <p>Breakthrough discoveries in genetic engineering and medical science</p>
+        </div>
+        <div class="research-card">
+          <h4>🚀 Space Technology</h4>
+          <p>Exploring aerospace engineering and satellite systems</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container-wide">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4 class="footer-title">Geovigil</h4>
+          <p class="footer-text">Committed to academic excellence, innovation, and transformative education. Preparing students to become future leaders and global citizens.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#" onclick="showLoginModal(); return false;">Student Portal</a></li>
+            <li><a href="#" onclick="showLoginModal(); return false;">Faculty Portal</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Contact</h4>
+          <ul class="footer-links">
+            <li>📍 Geovigil Campus, Tirupati, Andhra Pradesh</li>
+            <li>📞 +91-877-2284999</li>
+            <li>📧 admissions@geovigil.edu.in</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Geovigil. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Login/Register Modal -->
+  <div id="authModal" class="modal">
+    <div class="modal-overlay" onclick="closeAuthModal()"></div>
+    <div class="modal-container">
+      <button class="modal-close" onclick="closeAuthModal()">&times;</button>
+      <div class="modal-content">
+        <h1 class="modal-header">Portal Access</h1>
+
+        <!-- Role Selection Section -->
+        <div id="role-selection" class="form-section">
+          <h2>Select Your Role</h2>
+          <p class="form-subtitle">Please choose how you want to access the portal</p>
+          <div class="role-grid">
+            <button onclick="selectRole('Student')" class="role-card">
+              <span class="role-icon">🎓</span>
+              <span class="role-name">Student</span>
+              <span class="role-desc">Enroll & Learn</span>
+            </button>
+            <button onclick="selectRole('Teacher')" class="role-card">
+              <span class="role-icon">👨‍🏫</span>
+              <span class="role-name">Faculty</span>
+              <span class="role-desc">Teach & Manage</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Register Section -->
+        <div id="register-section" class="form-section hidden">
+      <h2>Register as <span id="registerRoleText"></span></h2>
+      <input type="text" id="regName" placeholder="Full Name" required>
+      <input type="email" id="regEmail" placeholder="Email Address" required>
+      <input type="password" id="regPassword" placeholder="Password" required>
+      
+      <!-- Branch Selection for Students Only -->
+      <div id="registerBranchSelection" class="branch-selection" style="display: none; margin: 15px 0;">
+        <label style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px; color: #667eea; font-weight: 600;">
+          📚 Select Your Branch
+        </label>
+        <select id="regBranch" style="width: 100%; padding: 12px; border: 2px solid #e0e7ff; border-radius: 10px; font-size: 14px; background: white; cursor: pointer;">
+          <option value="">-- Choose Your Branch --</option>
+          <option value="Computer Science Engineering">💻 Computer Science Engineering (CSE)</option>
+          <option value="Information Technology">🖥️ Information Technology (IT)</option>
+          <option value="Electronics and Communication">📡 Electronics & Communication (ECE)</option>
+          <option value="Electrical Engineering">⚡ Electrical Engineering (EEE)</option>
+          <option value="Mechanical Engineering">⚙️ Mechanical Engineering (ME)</option>
+          <option value="Civil Engineering">🏗️ Civil Engineering (CE)</option>
+          <option value="Chemical Engineering">🧪 Chemical Engineering (CHE)</option>
+          <option value="Biotechnology">🧬 Biotechnology (BT)</option>
+          <option value="Aerospace Engineering">✈️ Aerospace Engineering (AE)</option>
+          <option value="Automobile Engineering">🚗 Automobile Engineering (AU)</option>
+        </select>
+      </div>
+      
+          <input type="hidden" id="regRole" value="Student">
+          <button onclick="registerUser()" class="btn-primary">Create Account</button>
+          <p class="form-footer">Already have an account? <a href="#" onclick="toggleForm('login')" class="link-primary">Login here</a></p>
+          <p class="form-footer"><a href="#" onclick="backToRoleSelection()" class="link-secondary">← Back to role selection</a></p>
+        </div>
+
+        <!-- Login Section -->
+        <div id="login-section" class="form-section hidden">
+      <h2>Welcome Back</h2>
+      <p class="subtitle">Login as <span id="loginRoleText" class="role-badge"></span></p>
+      
+      <div class="input-group">
+        <span class="input-icon">📧</span>
+        <input type="email" id="loginEmail" placeholder="Email Address" required>
+      </div>
+      
+      <div class="input-group">
+        <span class="input-icon">🔒</span>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+      </div>
+      
+      <!-- Branch Selection for Students Only -->
+      <div id="loginBranchSelection" class="branch-selection professional" style="display: none;">
+        <label class="branch-label">
+          <span class="label-icon">🎓</span>
+          <span class="label-text">Academic Branch</span>
+          <span class="required-badge">Required</span>
+        </label>
+        <div class="select-wrapper">
+          <select id="loginBranch" class="select-professional">
+            <option value="">Select Your Branch</option>
+            <optgroup label="Computer & IT">
+              <option value="Computer Science Engineering">💻 Computer Science Engineering</option>
+              <option value="Information Technology">🖥️ Information Technology</option>
+            </optgroup>
+            <optgroup label="Electronics & Electrical">
+              <option value="Electronics and Communication">📡 Electronics & Communication</option>
+              <option value="Electrical Engineering">⚡ Electrical Engineering</option>
+            </optgroup>
+            <optgroup label="Mechanical & Civil">
+              <option value="Mechanical Engineering">⚙️ Mechanical Engineering</option>
+              <option value="Civil Engineering">🏗️ Civil Engineering</option>
+            </optgroup>
+            <optgroup label="Specialized Engineering">
+              <option value="Chemical Engineering">🧪 Chemical Engineering</option>
+              <option value="Biotechnology">🧬 Biotechnology</option>
+              <option value="Aerospace Engineering">✈️ Aerospace Engineering</option>
+              <option value="Automobile Engineering">🚗 Automobile Engineering</option>
+            </optgroup>
+          </select>
+          <span class="select-arrow">▼</span>
+        </div>
+      </div>
+      
+      <input type="hidden" id="loginRole" value="Student">
+      <button onclick="loginUser()" class="btn-primary btn-large">Sign In</button>
+      
+      <div class="divider">
+        <span>or</span>
+      </div>
+      
+      <p class="form-footer">Don't have an account? <a href="#" onclick="toggleForm('register')" class="link-primary">Create account</a></p>
+      <p class="form-footer"><a href="#" onclick="backToRoleSelection()" class="link-secondary">← Change role</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
